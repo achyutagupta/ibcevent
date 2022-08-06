@@ -1,0 +1,608 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.intro {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  transition: 1s;
+}
+.logoheader {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffd55a;
+}
+.logo {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+.logo.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+.logo.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+#Home {
+  display: flex;
+  height: 100vh;
+  background-image: url(img/sunset.jpg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  padding: 20px;
+  color: #ffffff;
+}
+.container hr{
+  height: 5px;
+  background-color: #ffffff;
+}
+.container h1{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+}
+.container h3 {
+  font-size: 6vh;
+  text-align: center;
+}
+.pic {
+  width: 35%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pic img {
+  border: 15px solid #6dd47e;
+  border-radius: 50%;
+  width: 80%;
+}
+#About {
+  background-color: #161616;
+  color: #ffd55a;
+  padding: 15px;
+}
+#About h1 {
+  color: #ffd55a;
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.pinfo {
+  padding: 0px 20px;
+  width: 50%;
+}
+.info span {
+  color: #ffffff;
+}
+.info h2 {
+  text-align: center;
+}
+.pinfo2 {
+  width: 50%;
+  padding: 0px 20px;
+  text-align: left;
+}
+
+
+#Works {
+  background-color: #ffd55a;
+}
+#Works h1 {
+  color: #ffd55a;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0px 40px;
+}
+
+
+.wrapper {
+  position: relative;
+  perspective: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+.wrapper .flip-card {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  margin: 0px 20px;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+}
+.wrapper .flip-card:hover {
+  transform: rotateY(180deg);
+}
+.flip-card .front-card1 {
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-image: url(img/event.jpg);
+  background-size: cover;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  position: absolute;
+}
+.back-card {
+  transform: rotateY(180deg);
+  backface-visibility: hidden
+}
+
+/* Gallery */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    background-color: #f3f2f1;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contain {
+    width: 100%;
+    margin: auto;
+    padding: 15px 15px 0px 15px;
+    background-color: #ffd55a;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.section-title h1 {
+    display: inline-block;
+    color: #161616;
+    margin: 0;
+    position: relative;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title h1:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #111;
+}
+
+/* Service Section */
+
+.gallery-section {
+    padding: 0;
+}
+
+.gallery-section .gallery-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px 15px 15px 0px;
+}
+
+.gallery-section .gallery-item-inner img {
+    width: 100%;
+    display: block;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.gallery-section .gallery-item-inner:hover img {
+    filter: grayscale(100%);
+    transform: scale(1);
+}
+
+.gallery-section .gallery-item-inner {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery-section .gallery-item-inner .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+
+.gallery-section .gallery-item-inner:hover .overlay {
+    opacity: 1;
+}
+
+.gallery-section .gallery-item-inner .overlay h4 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0;
+    transform: translateX(30px);
+    transition: all 0.5s ease;
+}
+
+.gallery-section .gallery-item-inner:hover .overlay h4 {
+    transform: translateX(0);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.modal::before {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.allimg {
+    flex-wrap: nowrap;
+    display: flex;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+@media(max-width: 767px) {
+
+    .gallery-section .gallery-item,
+    .service-section .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .modal {
+        padding-top: 100px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+@media(max-width: 575px) {
+
+    .gallery-section .gallery-item,
+    .service-section .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .allimg {
+        flex-wrap: wrap;
+        display: flex;
+        white-space: nowrap;
+        overflow: auto;
+        justify-content: center;
+    }
+
+    .allimg .column {
+        float: right;
+        width: 25%;
+        flex: 0 0 30%;
+        padding: 5px;
+    }
+
+    .prev,
+    .next {
+        top: 32%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+#Contact {
+  background-color: #161616;
+  width: 100%;
+  color: #ffd55a;
+  font-family: "Poppins", sans-serif;
+}
+#Contact h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+}
+.myform {
+  display: grid;
+  font-size: 30px;
+  margin: 0% 5%;
+  grid-template-columns: auto auto;
+}
+.myform input {
+  outline: none;
+  border-radius: 5px;
+}
+.myform span input {
+  height: 25px;
+}
+.myform #ffmessage {
+  grid-area: 1/2/6/2;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.myform #btn {
+  grid-row: 6;
+  grid-column: 1 / span 2;
+  width: 10%;
+  margin: 1% 45%;
+  background-color: #ffd55a;
+  color: #161616;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+.myform #btn:hover{
+  cursor: pointer;
+}
+#show {
+  text-align: center;
+  color: #ffd55a;
+  width: 100%;
+  border: none;
+  opacity: 0;
+}
+
+#show th,
+#show td {
+  padding: 13px;
+}
+@media (max-width: 550px) {
+  #Home {
+    display: block;
+  }
+  .container {
+    padding: 0px 20px;
+  }
+  .info {
+    display: block;
+  }
+  .myform {
+    display: flex;
+    flex-direction: column;
+  }
+  .myform {
+    font-size: 20px;
+  }
+  .myform #btn {
+    width: 40%;
+  }
+  .info {
+    font-size: 15px;
+  }
+  #csvf table td{
+    font-size: 2vh;
+  }
+}
+@media (max-width: 850px) {
+  .container h1{
+    font-size: 80px;
+  }
+  #show tr {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  #show th,
+  #show td {
+    padding: 0px;
+  }
+  #show {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #Contact h1{
+    font-size: 7vh;
+  }
+  #csvf h1{
+    font-size: 7vh;
+  }
+  #csvf table td{
+    padding: 0px;
+  }
+  .section-title h1{
+    font-size: 7vh;
+  }
+}
+@media (max-width: 333px) {
+    #show tr {
+        font-size: 2vh;
+    }
+    #Contact h1{
+      font-size: 5vh;
+    }
+    #csvf h1{
+      font-size: 5vh;
+    }
+    .section-title h1{
+      font-size: 5vh;
+    }
+  }

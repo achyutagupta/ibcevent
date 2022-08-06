@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/8610d00479.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="intro">
+      <h1 class="logoheader">
+        <span class="logo"><img src="img/logo.jpg" alt="" /></span>
+      </h1>
+    </div>
+    <script src="app.js"></script>
+    <section id="Home">
+      <!-- <div class="pic"><img src="img/ME.jpg" /></div> -->
+      <div class="container">
+        <h1>BACKWATERS</h1>
+        <hr>
+        <h3>The Annual Management Festival</h3>
+        <hr>
+        <p id="aboutme">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          quaerat necessitatibus, voluptatibus doloremque dolore tenetur
+          exercitationem ad harum quo ullam, ut cum fugit adipisci itaque autem
+          maxime facilis quibusdam odio non. Aliquid maiores, dolorem vitae
+          autem voluptate odit assumenda culpa labore architecto cumque
+          cupiditate saepe voluptas officiis ratione consequuntur similique.
+        </p>
+      </div>
+    </section> 
+    <section id="Works">
+      <div class="wrapper">
+        <div class="flip-card">
+          <div class="front-card1"></div>
+          <div class="back-card">     
+              <section id="About">
+                <h1>About Event</h1>
+                <div class="info">
+                  <div class="pinfo">
+                    <h2>Info</h2>
+                    <p>Date:<span>25th July 2022</span></p>
+                    <p>Venue:<span>MANIT Porch</span></p>
+                    <p>Timihgs:<span>8:00 P.M.</span></p>
+                  </p>
+                  <h2>Follow Us</h2>
+                  <p>
+                    <i class="fa-brands fa-linkedin"></i><span> /ibcmanit</span>
+                  </p>
+                  <p>
+                    <i class="fa-brands fa-square-facebook"></i
+                    ><span> /ibcmanit</span>
+                  </p>
+                  <p>
+                    <i class="fa-brands fa-square-instagram"></i
+                    ><span> /ibc_manit</span>
+                  </p>
+                  </div>
+                  <div class="pinfo2">
+                    <h2>Chief Guests</h2>
+                    <p>Sunil Alagh: <span>Former MD and CEO of Britannia Industries.</span></p>
+                    <p><span>Indian Institute of Management,</span>Calcutta</p>
+                    <p>Indra Nooyi: <span>The CEO of Pepsi</span></p>
+                    <p><span>Indian Institute of Management,</span>Calcutta</p>
+                  </div>
+                </div>
+              </section>
+              </span>
+            </span>
+          </div>
+        </div>
+    </section>
+    <section id="gallery">
+      <section class="gallery-section" id="gallerys">
+        <div class="contain">
+          <div class="row">
+            <div class="section-title">
+              <h1>Gallery</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="gallery-item" onclick="openModal();currentSlide(1)">
+              <div class="gallery-item-inner">
+                <img src="img/gallery1.JPG" alt="service" />
+                <div class="overlay">
+                  <h4>Image-1</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div
+                class="gallery-item-inner"
+                onclick="openModal();currentSlide(2)"
+              >
+                <img src="img/gallery2.JPG" alt="service" />
+                <div class="overlay">
+                  <h4>Image-2</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div
+                class="gallery-item-inner"
+                onclick="openModal();currentSlide(3)"
+              >
+                <img src="img/gallery3.JPG" alt="service" />
+                <div class="overlay">
+                  <h4>Image-3</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div
+                class="gallery-item-inner"
+                onclick="openModal();currentSlide(4)"
+              >
+                <img src="img/gallery4.JPG" alt="service" />
+                <div class="overlay">
+                  <h4>Image-4</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div
+                class="gallery-item-inner"
+                onclick="openModal();currentSlide(5)"
+              >
+                <img src="img/gallery5.JPG" alt="service" />
+                <div class="overlay">
+                  <h4>Image-5</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div
+                class="gallery-item-inner"
+                onclick="openModal();currentSlide(6)"
+              >
+                <img src="img/gallery6.JPG" alt="service" />
+                <div class="overlay">
+                  <h4>Image-6</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="img/gallery1.JPG" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="img/gallery2.JPG" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="img/gallery3.JPG" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="img/gallery4.JPG" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="img/gallery5.JPG" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6/ 6</div>
+            <img src="img/gallery6.JPG" style="width: 100%" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="allimg">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="img/gallery1.JPG"
+                style="width: 100%"
+                onclick="currentSlide(1)"
+                alt="Image description "
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="img/gallery2.JPG"
+                style="width: 100%"
+                onclick="currentSlide(2)"
+                alt="Image description"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="img/gallery3.JPG"
+                style="width: 100%"
+                onclick="currentSlide(3)"
+                alt="Image description"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="img/gallery4.JPG"
+                style="width: 100%"
+                onclick="currentSlide(4)"
+                alt="Image description"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="img/gallery5.JPG"
+                style="width: 100%"
+                onclick="currentSlide(5)"
+                alt="Image description"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="img/gallery6.JPG"
+                style="width: 100%"
+                onclick="currentSlide(6)"
+                alt="Image description"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="csvf">
+      <h1>Participants</h1>
+  <table >
+  </table>
+  <style>
+    #csvf{
+      width: 100%;
+      background-color: #ffd55a;
+      text-align: center;
+    }
+    #csvf table{
+      width: 100%;
+      padding:15px;
+    }
+    #csvf h1{
+    display: inline-block;
+    color: #161616;
+    margin: 0;
+    position: relative;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    }
+    #csvf h1:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #111;
+}
+    #csvf td{
+        margin: 0px;
+        border: 2px solid #161616;
+        padding: 10px;
+        color: black;
+    }
+</style>
+  <script>
+    onload=fetch("sample.csv").then(res=>{
+	return res.text()
+}).then(data=>{
+	let result=data.split(/\r?\n|\r/).map(e=>{
+		return e.split(","); 
+	})
+	result.forEach(e=>{
+		let m = e.map(e=>{
+			return `<td> ${e} </td>`;
+		}).join("")
+		let ce =document.createElement("tr");
+		ce.innerHTML = m;
+		document.querySelector("table").appendChild(ce);
+		console.log(m);
+	})
+})
+  </script>
+  </section>
+    <section id="Contact">
+      <form name="myform">
+        <h1>Registration Form</h1>
+        <div class="myform">
+          <span id="fn"
+            >First Name:
+            <input
+              type="text"
+              placeholder="First Name"
+              name="fname"
+              id="ffname"
+          /></span>
+          <span id="ln"
+            >Last Name:
+            <input
+              type="text"
+              placeholder="Last Name"
+              name="flname"
+              id="fflname"
+          /></span>
+          <span id="email"
+            >Email:
+            <input type="text" placeholder="Email" name="femail" id="ffemail"
+          /></span>
+          <span id="phone"
+            >Phone:
+            <input type="text" placeholder="Phone" name="fphone" id="ffphone"
+          /></span>
+          <span id="address"
+            >Address:
+            <input
+              type="text"
+              placeholder="Address"
+              name="faddress"
+              id="ffaddress"
+          /></span>
+          <input
+            type="text"
+            id="ffmessage"
+            placeholder="Type Your Message Here"
+            name="fmessage"
+          />
+          <input
+            type="button"
+            name="button"
+            id="btn"
+            value="Submit"
+            onclick="AddRow()"
+          />
+          <!-- <button id="btn" onclick="AddRow()">Submit</button> -->
+        </div>
+      </form>
+      <table border="6" id="show">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>message</th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+  </body>
+</html>
